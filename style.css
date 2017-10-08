@@ -1,0 +1,488 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+  }
+  /*@font-face {
+    font-family: 'AlexBrush-Regular';
+    src: url(mcs_project/AlexBrush-Regular.ttf);
+  }*/
+
+    .index-header-fixed {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  }
+
+  .header-heading {
+  color: darkslategrey;
+  font-family: 'Marck Script', cursive;
+  font-size: 50px;
+  margin: 0;
+  background: white;
+  }
+
+  .text-shadow {
+    text-shadow: 3px -3px 60px darkslategrey;
+    margin: 1px;
+  }
+
+/*верхний навигатор на главной*/
+.nav-position-absolute {
+  position: absolute;
+  font-family: 'Marck Script', cursive;
+  font-size: 20px;
+  padding: 20px 30px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/*ссылки в верхнем навигаторе на главной*/
+.index-nav-item {
+}
+
+.index-article-content {
+  margin-right: 250px;
+  margin-top: 20px;
+}
+
+.index-main {
+  position: relative;
+  margin: 20px;
+  padding-top: 60px;
+  padding-right: 100px;
+  padding-left: 25px;
+  padding-bottom: 25px;
+}
+
+.index-article {
+padding-top: 30px;
+}
+
+/*конкретные статьи на главной*/
+.index-article-item {
+margin-bottom: 60px;
+}
+
+.aside {
+  position: absolute;
+  padding: 40px 40px;
+  width: 350px;
+  height: 300px;
+  top: 60px;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  border: 2px solid gainsboro;
+}
+
+.aside-index-nav {
+  color: darkslategrey;
+  font-family: 'Marck Script', cursive;
+  font-size: 35px;
+}
+
+.footer {
+  width: 100%;
+  height: 110px;
+  background-color: gainsboro;
+  padding: 20px 20px;
+}
+
+/*эксперименты с position*/
+.position-parent {
+  width: 200px;
+  height: 300px;
+  background: pink;
+  position: relative;
+  margin: 50px;
+}
+.position-child {
+  height: 300px;
+  background: violet;
+  position: relative;
+  left: 100px;
+  top: 100px;
+}
+.position-child-absolute {
+  width: 100px;
+  height: 300px;
+  background: grey;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+/*.position-child-fixed {
+  width: 100px;
+  height: 300px;
+  background: salmon;
+  position: fixed;
+  right: 100px;
+  top: 100px;
+}*/
+.position-child-z-index {
+  width: 100px;
+  height: 300px;
+  background: purple;
+  position: absolute;
+}
+.z-index-1 {
+  left: 50px;
+  top: 50px;
+  background: red;
+  z-index: 3;
+}
+.z-index-2 {
+  left: 100px;
+  top: 100px;
+  background: green;
+  z-index: 2;
+}
+.z-index-3 {
+  left: 150px;
+  top: 150px;
+  background: blue;
+  z-index: 1;
+}
+
+.font {
+  padding: 100px;
+}
+.font-size {
+  font-size: 25px;
+}
+.font-weight {
+  font-weight: 700;
+}
+.font-style {
+  font-style: italic;
+}
+.font-variant {
+  font-variant: small-caps;
+}
+
+/*background-image*/
+.background-image-svg {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background-image: url("mcs_img/cherries.svg");
+  background-repeat: repeat;
+}
+.background-image-img {
+  width: 300px;
+  height: 500px;
+  margin: 10px;
+  background-image: url("mcs_img/005.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.background-color {
+  width: 300px;
+  height: 300px;
+  background-color: tomato;
+  position: relative;
+}
+
+.background-color-child {
+  width: 300px;
+  height: 300px;
+  background-color: grey;
+  background-image: url("mcs_img/like.svg");
+  background-size: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  border: 1px solid grey;
+}
+
+.linear-gradient {
+  width: 200px;
+  height: 200px;
+  margin: 200px;
+  background-image: linear-gradient(violet, black);
+}
+
+.linear-gradient-1 {
+  width: 200px;
+  height: 200px;
+  margin: 100px;
+  background-image: linear-gradient(to top left, salmon, black);
+}
+
+.linear-gradient-2 {
+  width: 200px;
+  height: 200px;
+  margin: 100px;
+  background-image: linear-gradient(190deg, yellow, black);
+}
+
+.linear-gradient-3 {
+  width: 200px;
+  height: 200px;
+  margin: 100px;
+  background-image: linear-gradient(red, tomato, salmon, pink);
+}
+
+.linear-gradient-4 {
+  width: 200px;
+  height: 200px;
+  margin: 100px;
+  background-image: linear-gradient(orange 10%, tomato 30%, salmon 100%, pink 50%);
+}
+
+.radial-gradient {
+  width: 400px;
+  height: 200px;
+  margin: 30px;
+  background-image: radial-gradient(brown, yellow);
+}
+
+.radial-gradient-1 {
+  width: 400px;
+  height: 200px;
+  margin: 30px;
+  background-image: radial-gradient(at left bottom, purple, pink);
+}
+
+.radial-gradient-2 {
+  width: 400px;
+  height: 200px;
+  margin: 30px;
+  background-image: radial-gradient(circle, orange, pink);
+}
+
+.gradient-generator {
+  width: 400px;
+  height: 200px;
+  margin: 50px;
+background-image: -webkit-linear-gradient(-45deg, #e570e7 19%,#c85ec7 36%,#c85ec7 53%,#a849a3 89%);
+background: linear-gradient(135deg, #e570e7 19%,#c85ec7 36%,#c85ec7 53%,#a849a3 89%);
+}
+/*эксперименты с флексбоксом*/
+.flex-container {
+display: flex;
+flex-direction:row;
+flex-wrap: wrap;
+/*justify-content: center;*/
+align-items: center;
+align-content: flex-end;
+height: 500px;
+margin-top: 50px;
+margin-bottom: 200px;
+background-color: white;
+border: 1px solid navy;
+}
+.flex-element {
+width: 200px;
+}
+.flex-element-1 {
+background-color: pink;
+order: 5;
+}
+.flex-element-2 {
+background-color: lavender;
+order: 2;
+flex-shrink: 0px;
+}
+.flex-element-3 {
+background-color: violet;
+order: 1;
+flex-grow: 5;
+}
+.flex-element-4 {
+background-color: purple;
+order: 4;
+}
+.flex-element-5 {
+background-color: salmon;
+order:3;
+}
+
+.box-shadow {
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  box-shadow: 10px 17px 5px 1px black;
+  background-color: rgba(255, 255, 255, .5);
+  border: 1px solid black;
+}
+
+.box-shadow-inset {
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  box-shadow: inset 4px -2px 90px 4px teal;
+  background-color: rgba(255, 255, 255, .5);
+  border: 1px solid black;
+}
+
+.calc-parent {
+display: flex;
+border: 1px solid black;
+height: 300px;
+}
+
+.calc-parent-inner {
+  margin-left: - 10px;
+  margin-right: - 10px;
+}
+
+.calc-child {
+  width: calc(50% - 20px);
+  height: 100px;
+  margin: 0 10px;
+  background-color: blue;
+}
+
+.calc-parent-part {
+  display: flex;
+  height: 200px;
+  border: 1px solid grey;
+  margin: 30px;
+  }
+.calc-child-part {
+  width: calc(100% / 7 - 10px);
+  background-color: green;
+  margin: 0 5px;
+}
+
+.calc-parent-2 {
+  display: flex;
+  height: 200px;
+  border: 1px solid grey;
+  margin: 100px;
+}
+
+.calc-child-responsive {
+  width: calc(100% - 70px);
+  background-color: yellow;
+}
+
+.calc-child-fixed {
+  width: calc(50px + 20px);
+  background-color: grey;
+}
+
+.hover {
+  width: 150px;
+  height: 150px;
+  background-color: tomato;
+  margin: 50px;
+}
+
+.hover:hover {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  border: 1px solid purple;
+}
+
+.link-hover {
+  color: orange;
+  font-size: 30px;
+}
+.link-hover:hover {
+  color: green;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.focus {
+  height: 50px;
+  width: 150px;
+  padding: 10px;
+  border: 1px solid olive;
+  border-radius: 10px;
+  outline: 0;
+}
+
+.focus:focus {
+  box-shadow: inset 0 0 15px 0 rgba(0,0,0,.5);
+}
+
+.pseudo-classes-parent {
+  padding: 15px;
+  border: 1px dashed black;
+  margin: 20px;
+}
+
+.pseudo-classes-child {
+  height: 20px;
+  margin: 10px;
+  border: 1px solid grey;
+}
+
+.pseudo-classes-child:first-child {
+  background-color: green;
+  margin-top: 0;
+}
+
+.pseudo-classes-child:last-child {
+  background-color: olive;
+  margin-bottom: 0;
+}
+
+.pseudo-classes-child:nth-child(2) {
+  border-color: red;
+}
+.pseudo-classes-child:nth-child(2n) {
+  background-color: lightblue;
+}
+
+.pseudo-classes-child:nth-child(odd) {
+  background-color: pink;
+}
+
+.pseudo-elements {
+
+}
+
+.pseudo-elements:before {
+  content: 'Впереди всего текста';
+  color: violet;
+}
+
+.pseudo-elements:after {
+  content: 'После всего текста';
+  color: navy;
+}
+
+.transition-color {
+  font-size: 30px;
+  color: black;
+  transition: color 2s ease 1s, font-size 2s ease-out;
+}
+
+.transition-color:hover {
+  color:red;
+  font-size: 40px;
+}
+
+.transition-left {
+  width: 100px;
+  height: 100px;
+  border: 3px solid violet;
+  position: relative;
+  left: 0;
+  transition: left 3s ease-in 1s, width 2s linear;
+}
+
+.transition-left:hover {
+  left: 200px;
+  width: 200px;
+}
